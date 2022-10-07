@@ -20,9 +20,9 @@ export default function Card(props: any) {
   return (
     <div>
       <Slider {...settings}>
-        {cards.map((card: any) => (
+        {cards.map((card: any, index:number) => (
           <>
-            <RowCards>
+            <RowCards key={index}>
               <CardContainer className="cardContainer">
                 <PriceInfo>
                 <span>{`-${card.priceDetail.pricingPercentage}%`}</span>

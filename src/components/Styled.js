@@ -1,12 +1,15 @@
 import styled, { css } from "styled-components";
 export const RowCards = styled.div`
-  gap: 2em;
-`;
-export const CardContainer = styled.div`
+  height: 41vh;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 5px;
   position: relative;
+  margin-bottom: 10%;
+  margin-top: 10%;
+`;
+export const CardContainer = styled.div`
+
 `;
 export const PriceInfo = styled.div`
   position: absolute;
@@ -18,9 +21,10 @@ export const PriceInfo = styled.div`
   border-radius: 10%;
 `;
 export const CardBottomTitle = styled.h5`
-text-align: left;
-    margin-left: 10%;
-`
+  text-align: left;
+  margin-left: 10%;
+  margin-bottom: 0;
+`;
 export const CardBottomInfo = styled.div`
   display: flex;
   gap: 1em;
@@ -34,7 +38,8 @@ export const DestinationInfo = styled.div`
   left: 14%;
   color: white;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.3em;
+  text-align: left;
 `;
 export const Image = styled.img`
   width: 80%;
