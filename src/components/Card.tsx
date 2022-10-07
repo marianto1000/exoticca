@@ -3,10 +3,15 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Card.css";
-import { CardContainer, RowCards, Image, DestinationInfo, PriceInfo, CardBottomInfo, CardBottomTitle } from "./Styled";
-interface CardInterface {
-  title: string;
-}
+import {
+  CardContainer,
+  RowCards,
+  Image,
+  DestinationInfo,
+  PriceInfo,
+  CardBottomInfo,
+  CardBottomTitle,
+} from "./Styled";
 
 export default function Card(props: any) {
   const settings = {
@@ -18,22 +23,22 @@ export default function Card(props: any) {
       {
         breakpoint: 560,
         settings: {
-          slidesToShow: 1
-        }
-      }
-    ]
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
   const cards = props.cardInfo.cards;
 
   return (
     <div>
       <Slider {...settings}>
-        {cards.map((card: any, index:number) => (
+        {cards.map((card: any, index: number) => (
           <>
             <RowCards key={index}>
               <CardContainer className="cardContainer">
                 <PriceInfo>
-                <span>{`-${card.priceDetail.pricingPercentage}%`}</span>
+                  <span>{`-${card.priceDetail.pricingPercentage}%`}</span>
                 </PriceInfo>
                 <DestinationInfo>
                   <span>{card.destination}</span>

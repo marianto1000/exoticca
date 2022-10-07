@@ -8,9 +8,7 @@ export const RowCards = styled.div`
   margin-bottom: 10%;
   margin-top: 10%;
 `;
-export const CardContainer = styled.div`
-
-`;
+export const CardContainer = styled.div``;
 export const PriceInfo = styled.div`
   position: absolute;
   top: 5%;
@@ -70,4 +68,13 @@ export const MainTitle = styled.h5`
 export const CardsGrid = styled.ul`
   padding-left: 0px;
   padding: 5%;
+`;
+export const SpinnerIcon = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 30%;
+`;
+export const Spinning = styled.i`
+  animation: spinner 1s linear infinite;
+  font-size: 60px;
 `;
