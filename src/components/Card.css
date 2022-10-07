@@ -10,3 +10,17 @@
 .slick-list {
     margin: 0 -10px;
 }
+
+@media (max-width: 560px) {
+    .App ul {
+      padding: 15%;
+    }
+  }
+
+  @media (max-width: 820px) {
+    .sc-bcXHqe.kWva-db {
+        height: 26vh;
+    }
+  }
+  
+  

@@ -14,6 +14,14 @@ export default function Card(props: any) {
     infinite: true,
     slidesToShow: 3,
     swipeToSlide: true,
+    responsive: [
+      {
+        breakpoint: 560,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
   };
   const cards = props.cardInfo.cards;
 
